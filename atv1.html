@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Professor Juquinha</title>
+    </head>
+    <body>
+        <h1>Professor Juquinha - Aulas de Música</h1>
+        <h2>Sobre o Professor</h2>
+        <p>Olá! Meu nome é Juquinha e sou professor de música. Dou aulas de violão, guitarra e teoria musical para iniciantes e alunos intermediários.</p>
+        <p>A música é uma forma incrível de expressão e qualquer pessoa pode aprender. Nas minhas aulas você aprenderá desde os primeiros acordes até tocar músicas completas.</p>
+        <h2>Instrumentos ensinados</h2>
+        <ul>
+            <li>Violão</li>
+            <li>Guitarra</li>
+            <li>Teoria Musical</li>
+        </ul>
+        <hr>
+        <h2>Horários de Aula</h2>
+        <table border="1">
+            <tr>
+                <th>Dia</th>
+                <th>Horário</th>
+                <th>Instrumento</th>
+            </tr>
+            <td>Segunda</td>
+            <td>14:00</td>
+            <td>Violão</td>
+            <tr>
+                <td>Quarta</td>
+                <td>16:00</td>
+                <td>Guitarra</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>10:00</td>
+                <td>Teoria Musical</td>
+            </tr>
+        </table>
+        <p style="font-size: small;">Verifique a possibilidade de incluir outros instrumentos</p>
+        <hr>
+        <h2>Agende sua Aula</h2>
+        <form>
+           <div>
+             <label for="nome">Nome:</label>
+            <input type="text" name="nome" required>
+           </div>
+           <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+           </div>
+           
+           <div>
+            <label for="idade">Idade</label>
+            <input type="number">
+           </div>
+           
+            <label for="instrumento_interesse">Instrumento de Interesse:</label>
+            <div>
+            <input type="checkbox" name="instrumento_interesse[]" required>
+            <label>Guitarra</label>
+           </div>
+           <div>
+            <input type="checkbox" name="instrumento_interesse[]">
+           <label>Violão</label>
+           </div>
+           <div>
+            <input type="checkbox" name="instrumento_interesse[]">
+            <label>Violino</label>
+           </div>
+           <div>
+            <input type="checkbox" name="instrumento_interesse[]">
+            <label>Piano</label>
+           </div>
+           <div>
+           <input type="checkbox" name="instrumento_interesse[]">
+           <label>Baixo</label>
+           </div>
+           <div>
+            <label for="nivel_experiencia">Nível Musical:</label>
+            <input type="range" min="0" max="10" value="5">
+           </div>
+           <div>
+            <label for="observação">Mensagem:</label>
+            <textarea name="observação" rows="4"></textarea>
+           </div>
+           <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+           </div>
+        </form>
+    </body>
+</html>
